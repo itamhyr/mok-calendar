@@ -1,0 +1,17 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "mok-calendar",
+  "main": ".open-next/worker.js",
+  // Keep this at or after the date below so all Workers runtime features
+  // required by @opennextjs/cloudflare (nodejs_compat, FinalizationRegistry,
+  // etc.) are available. Bump it to today's date on first deploy.
+  "compatibility_date": "2026-07-07",
+  "compatibility_flags": ["nodejs_compat", "global_fetch_strictly_public"],
+  "assets": {
+    "directory": ".open-next/assets",
+    "binding": "ASSETS"
+  },
+  "observability": {
+    "enabled": true
+  }
+}

@@ -1,5 +1,27 @@
-node_modules/
-.next/
-.env
-.env.local
-out/
+# dependencies
+/node_modules
+
+# next.js
+/.next/
+/out/
+
+# production
+/build
+
+# next-pwa generated files
+/public/sw.js
+/public/workbox-*.js
+/public/worker-*.js
+/public/fallback-*.js
+
+# opennext / cloudflare
+/.open-next/
+/.wrangler/
+cloudflare-env.d.ts
+.dev.vars
+
+# misc
+.DS_Store
+*.pem
+npm-debug.log*
+.env*.local
